@@ -82,7 +82,7 @@ ul {
 
 .banner-transition {
   height: 150px;
-  background: url("/img/banner-transition2.svg");
+  background: url("./img/banner-transition2.svg");
   background-position: bottom left;
   background-size: cover;
   margin-top: -25px;
@@ -109,23 +109,23 @@ ul {
 }
 
 .falcon-super-runner {
-  background: url(/img/falcon-super-runner_preview.jpg);
+  background: url(./img/falcon-super-runner_preview.jpg);
 }
 
 .emma-de-groot {
-  background: url(/img/emma-de-groot_preview.jpg);
+  background: url(./img/emma-de-groot_preview.jpg);
 }
 
 .louter {
-  background: url(/img/louter_preview.jpg);
+  background: url(./img/louter_preview.jpg);
 }
 
 .new-collective {
-  background: url(/img/new-collective_preview.jpg);
+  background: url(./img/new-collective_preview.jpg);
 }
 
 .tiramisu {
-  background: url(/img/tiramisu_preview.jpg);
+  background: url(./img/tiramisu_preview.jpg);
 }
 
 .music-cards .card {
