@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Kotfeesten - Design</title>
+  </head>
+  <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-4x"></i>
+    </div>
+    <!-- Navigation -->
+    <div class="main-nav-container">
+      <div class="main-nav-inner">
+        <nav class="main-nav">
+          <div class="logo-container">
+            <div class="date">27 JULI 2020 | LILLE BELGIE</div>
+            <h1>Kotfeesten</h1>
+          </div>
+          <ul class="main-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lineup</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Banner -->
+    <div class="banner-container">
+      <div class="banner-inner">
+        <h1>Kotfeesten Logo</h1>
+      </div>
+    </div>
+    <div class="banner-transition"></div>
+    <!-- Music -->
+    <div class="music-container">
+      <div class="music-inner">
+        <h2>Music</h2>
+      </div>
+      <div class="music-cards">
+        <div class="card falcon-super-runner">
+          <div class="content">
+            <div class="band-name-background">
+              <h3>Falcon Super Runner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card emma-de-groot">
+          <div class="content">
+            <div class="band-name-background">
+              <h3>Emma De Groot</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card louter">
+          <div class="content">
+            <div class="band-name-background">
+              <h3>Louter</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card new-collective">
+          <div class="content">
+            <div class="band-name-background">
+              <h3>New Collective</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Information -->
+    <div class="info-container">
+      <div class="info-inner">
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Broekzijstraat</p>
+          <p>2275 Lille</p>
+          <p>België</p>
+          <p>info@kotfeesten.be</p>
+        </div>
+        <div class="card">
+          <h2>More information</h2>
+          <a href="#">About the Kotfeesten</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sponsors -->
+    <div class="sponsors-container">
+      <div class="sponsors-inner">
+        <img src="img/sponsors/daems.jpg" alt="daems" />
+        <img src="img/sponsors/jacobs.svg" alt="jacobs" />
+        <img src="img/sponsors/md.png" alt="md" />
+        <img src="img/sponsors/pelkmans.jpeg" alt="pelkmans" />
+        <img src="img/sponsors/piedfort.jpg" alt="piedfort" />
+        <img src="img/sponsors/wdb.gif" alt="wdb" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <ul>
+          <li><a href="#">&copy; Kotfeesten 2020</a></li>
+          <li><a href="#">Contact Kotfeesten</a></li>
+          <li><a href="#">Privacy & cookies</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Design by Branders</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document.querySelector(".menu-btn").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

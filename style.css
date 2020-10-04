@@ -1,0 +1,327 @@
+/* Reset default */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #e5e5e5;
+  color: #000;
+  line-height: 15px;
+  line-height: 1.5;
+}
+
+/* Navigation */
+.main-nav-container {
+  background: #14213d;
+  color: #e5e5e5;
+}
+
+.main-nav-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-btn {
+  color: #e5e5e5;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  z-index: 2;
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.main-nav h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+/* Banner */
+.banner-container {
+  margin-top: -5px;
+  background: #14213d;
+  color: #e5e5e5;
+}
+
+.banner-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.banner-transition {
+  height: 150px;
+  background: url("/img/banner-transition2.svg");
+  background-position: bottom left;
+  background-size: cover;
+  margin-top: -25px;
+}
+
+/* Music */
+
+.music-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.music-cards {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 20px;
+  padding-bottom: 80px;
+}
+
+.falcon-super-runner {
+  background: url(/img/falcon-super-runner_preview.jpg);
+}
+
+.emma-de-groot {
+  background: url(/img/emma-de-groot_preview.jpg);
+}
+
+.louter {
+  background: url(/img/louter_preview.jpg);
+}
+
+.new-collective {
+  background: url(/img/new-collective_preview.jpg);
+}
+
+.tiramisu {
+  background: url(/img/tiramisu_preview.jpg);
+}
+
+.music-cards .card {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #14213d;
+  color: white;
+}
+
+.music-cards .card:hover {
+  opacity: 0.8;
+}
+
+.music-cards .card .content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.band-name-background {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.band-name-background h3 {
+  text-align: center;
+}
+
+/* Information */
+
+.info-container {
+  background-color: #fca311;
+  color: #14213d;
+}
+
+.info-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.info-inner .card {
+  margin: 20px;
+}
+
+.info-inner .card a {
+  color: #14213d;
+}
+
+/* Sponsors */
+.sponsors-container {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.sponsors-inner {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sponsors-inner img {
+  height: 60px;
+  width: auto;
+  max-width: 200px;
+  margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+}
+.footer-inner {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px;
+}
+
+.footer-inner ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-inner a {
+  color: #e5e5e5;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+@media (max-width: 1000px) {
+  .music-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (orientation: portrait), (max-width: 750px) {
+  .menu-btn {
+    display: block;
+  }
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30;
+    transform: translateX(-500px);
+    /* transition: transform 0.5s ease-in-out; */
+  }
+
+  .main-nav h1 {
+    font-size: 50px;
+  }
+
+  .main-nav .date {
+    font-size: 23px;
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 20px 40px;
+    border-bottom: #ccc solid 1px;
+    font-size: 40px;
+  }
+
+  .main-menu a {
+    color: #000;
+  }
+
+  .main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .main-nav ul.main-menu.show {
+    transform: translateX(0px);
+  }
+
+  .music-cards {
+    grid-auto-rows: 500px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .music-inner h2 {
+    font-size: 50px;
+  }
+
+  .band-name-background h3 {
+    font-size: 40px;
+  }
+
+  .info-inner {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .info-inner h2 {
+    font-size: 50px;
+  }
+
+  .info-inner p,
+  .info-inner a,
+  .footer a {
+    font-size: 30px;
+  }
+
+  .sponsors-inner {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .sponsors-inner img {
+    height: 150px;
+  }
+
+  .footer-inner ul {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
